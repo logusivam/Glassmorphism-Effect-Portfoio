@@ -79,4 +79,11 @@
       }
     }
   }
+
+  .card__content
+  {
+    text-align: center;
+    color: #fff;
+    padding: 5em 2.5em;
+  }
 }
