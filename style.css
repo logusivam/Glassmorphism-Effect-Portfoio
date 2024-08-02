@@ -232,6 +232,88 @@
         margin: 5px 0 30p;
         font-size: 16px;
       }
+
+      p
+      {
+        text-align: left;
+
+        span 
+        {
+          margin-right: 10px;
+        }
+
+        a
+        {
+          text-decoration: none;
+          color: var(--black);
+
+          &:hover
+          {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      p+p
+      {
+        margin-top: 10px;
+      }
+    }
+
+    a.button
+    {
+      text-decoration: none;
+      color: var(--white);
+      background: var(--black);
+      padding: 9px 30px 10px 30px;
+      display: inline-block;
+      margin-top: 2em;
+
+      &:hover
+      {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+}
+
+/* black theme end */
+
+/* switch design for theme change  */
+#switch
+{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  background: var(--white);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover i
+  {
+    animation: rotation 1.5s linear forwards infinite;
+  }
+
+  i
+  {
+    font-size: 1.5rem;
+  }
+
+  @keyframes rotation
+  {
+    0%
+    {
+      transform: rotate(0deg);
+    }
+
+    100%
+    {
+      transform: rotate(360deg);
     }
   }
 }
