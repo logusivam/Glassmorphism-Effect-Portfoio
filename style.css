@@ -136,6 +136,11 @@
       padding: 9px 30px 10px 30px;
       display: inline-block;
       margin-top: 2em;
+
+      &:hover
+      {
+        background: rgba(0, 0, 0, 0.7);
+      }
     }
   }
 }
