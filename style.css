@@ -17,4 +17,10 @@
   justify-content: center;
   align-items: center;
   background: #161623;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
