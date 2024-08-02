@@ -145,3 +145,93 @@
   }
 }
 
+/* white theme */
+.white-theme
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3fe2f2;
+  background-image: linear-gradient(135deg, #3fe2f2 0%, #43dbc0 16%, #29b7f2 49%, #3cabe8 86%);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Late', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+
+  &::before
+  {
+    position: absolute;
+    content: '';
+    left: 40%;
+    bottom: -40%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(135deg, #3fe2f2 0%, #43dbc0 24%, #3cabe8 91%);
+    border-radius: 50%;
+  }
+
+  .card
+  {
+    width: 350px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .card__top
+    {
+      height: 155px;
+      position: relative;
+
+      img 
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile__photo
+      {
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img
+        {
+          width: 100%;
+          border-radius: 50%;
+          height: 100%;
+          object-fit: cover;
+          border: 8px solid rgba(255, 255, 255, 0.55);
+        }
+      }
+    }
+
+    .card__content
+    {
+      text-align: center;
+      color: var(--black);
+      padding: 5em 2.5em;
+
+      h2 
+      {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      h3 
+      {
+        font-weight: 400;
+        margin: 5px 0 30p;
+        font-size: 16px;
+      }
+    }
+  }
+}
