@@ -8,6 +8,13 @@ function changeTheme()
 {
     if(document.body.classList.contains("black-theme"))
     {
-        document.body.classList
+        document.body.classList.remove('black-theme');
+        document.body.classList.add("white-theme");
+        change.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+
+    else
+    {
+        
     }
 }
