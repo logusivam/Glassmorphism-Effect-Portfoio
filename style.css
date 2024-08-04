@@ -11,8 +11,7 @@
 }
 
 /* theme change  */
-.black-theme
-{
+.black-theme {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,131 +22,119 @@
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.5px;
   font-weight: 400;
+}
 
-  &::before
-  {
-    position: absolute;
-    content: '';
-    left: 40%;
-    bottom: -40%;
-    width: 600px;
-    height: 600px;
-    background: linear-gradient(#ff5722, #ff9800);
-    border-radius: 50%;
+.black-theme::before {
+  position: absolute;
+  content: '';
+  left: 40%;
+  bottom: -40%;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(#ff5722, #ff9800);
+  border-radius: 50%;
+}
+
+.black-theme .card {
+  width: 350px;
+  height: 500px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.black-theme .card .card__top {
+  height: 155px;
+  position: relative;
+}
+
+.black-theme .card .card__top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.black-theme .card .card__top .profile__photo {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.black-theme .card .card__top .profile__photo img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  border: 7px solid rgba(0, 0, 0, 0.35);
+}
+
+.black-theme .card .card__content {
+  text-align: center;
+  color: #fff;
+  padding: 5em 2.5em;
+}
+
+.black-theme .card .card__content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.black-theme .card .card__content h3 {
+  font-weight: 400;
+  margin: 5px 0 30px;
+  font-size: 16px;
+}
+
+.black-theme .card .card__content p {
+  text-align: left;
+}
+
+.black-theme .card .card__content p span {
+  margin-right: 10px;
+}
+
+.black-theme .card .card__content p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.black-theme .card .card__content p a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.black-theme .card .card__content p + p {
+  margin-top: 10px;
+}
+
+.black-theme .card a.button {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 9px 30px 10px 30px;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.black-theme .card a.button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-
-  /* card design */
-  .card
-  {
-    width: 350px;
-    height: 500px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    overflow: hidden;
-
-    .card__top
-    {
-      height: 155px;
-      position: relative;
-
-      img
-      {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .profile__photo
-      {
-        width: 130px;
-        height: 130px;
-        position: absolute;
-        bottom: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        img 
-        {
-          width: 100%;
-          border-radius: 50%;
-          height: 100%;
-          object-fit: cover;
-          border: 7px solid rgba(0, 0, 0, 0.35);
-        }
-      }
-    }
-
-    .card__content
-    {
-      text-align: center;
-      color: #fff;
-      padding: 5em 2.5em;
-
-      h2
-      {
-        font-weight: 700;
-        font-size: 24px;
-      }
-
-      h3 
-      {
-        font-weight: 400;
-        margin: 5px 0 30px;
-        font-size: 16px;
-      }
-
-      p
-      {
-        text-align: left;
-
-        span 
-        {
-          margin-right: 10px;
-        }
-
-        a 
-        {
-          text-decoration: none;
-          color: #fff;
-
-          &:hover
-          {
-            text-decoration: underline;
-            color: aqua;
-          }
-        }
-      }
-
-      p+p
-      {
-        margin-top: 10px;
-      }
-    }
-    /* card design end */
-
-    /* card button */
-    a.button
-    {
-      text-decoration: none;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.85);
-      padding: 9px 30px 10px 30px;
-      display: inline-block;
-      margin-top: 2em;
-
-      &:hover
-      {
-        background: rgba(0, 0, 0, 0.7);
-      }
-    }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-/* white theme */
-.white-theme
-{
+.white-theme {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,128 +143,111 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  font-family: 'Late', sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 0.5px;
   font-weight: 400;
-
-  &::before
-  {
-    position: absolute;
-    content: '';
-    left: 40%;
-    bottom: -40%;
-    width: 600px;
-    height: 600px;
-    background: linear-gradient(135deg, #3fe2f2 0%, #43dbc0 24%, #3cabe8 91%);
-    border-radius: 50%;
-  }
-
-  .card
-  {
-    width: 350px;
-    height: 500px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    overflow: hidden;
-
-    .card__top
-    {
-      height: 155px;
-      position: relative;
-
-      img 
-      {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .profile__photo
-      {
-        width: 130px;
-        height: 130px;
-        position: absolute;
-        bottom: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        img
-        {
-          width: 100%;
-          border-radius: 50%;
-          height: 100%;
-          object-fit: cover;
-          border: 8px solid rgba(255, 255, 255, 0.55);
-        }
-      }
-    }
-
-    .card__content
-    {
-      text-align: center;
-      color: var(--black);
-      padding: 5em 2.5em;
-
-      h2 
-      {
-        font-weight: 700;
-        font-size: 24px;
-      }
-
-      h3 
-      {
-        font-weight: 400;
-        margin: 5px 0 30p;
-        font-size: 16px;
-      }
-
-      p
-      {
-        text-align: left;
-
-        span 
-        {
-          margin-right: 10px;
-        }
-
-        a
-        {
-          text-decoration: none;
-          color: var(--black);
-
-          &:hover
-          {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      p+p
-      {
-        margin-top: 10px;
-      }
-    }
-
-    a.button
-    {
-      text-decoration: none;
-      color: var(--white);
-      background: var(--black);
-      padding: 9px 30px 10px 30px;
-      display: inline-block;
-      margin-top: 2em;
-
-      &:hover
-      {
-        background-color: rgba(0, 0, 0, 0.7);
-      }
-    }
-  }
 }
 
-/* black theme end */
+.white-theme::before {
+  position: absolute;
+  content: '';
+  left: 40%;
+  bottom: -40%;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #3fe2f2 0%, #43dbc0 24%, #3cabe8 91%);
+  border-radius: 50%;
+}
+
+.white-theme .card {
+  width: 350px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.30);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.white-theme .card .card__top {
+  height: 155px;
+  position: relative;
+}
+
+.white-theme .card .card__top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.white-theme .card .card__top .profile__photo {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.white-theme .card .card__top .profile__photo img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, 0.55);
+}
+
+.white-theme .card .card__content {
+  text-align: center;
+  color: var(--black);
+  padding: 5em 2.5em;
+}
+
+.white-theme .card .card__content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.white-theme .card .card__content h3 {
+  font-weight: 400;
+  margin: 5px 0 30px;
+  font-size: 16px;
+}
+
+.white-theme .card .card__content p {
+  text-align: left;
+}
+
+.white-theme .card .card__content p span {
+  margin-right: 10px;
+}
+
+.white-theme .card .card__content p a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.white-theme .card .card__content p a:hover {
+  text-decoration: underline;
+}
+
+.white-theme .card .card__content p + p {
+  margin-top: 10px;
+}
+
+.white-theme .card a.button {
+  text-decoration: none;
+  color: var(--white);
+  background: var(--black);
+  padding: 9px 30px 10px 30px;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.white-theme .card a.button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 /* switch design for theme change  */
 #switch
