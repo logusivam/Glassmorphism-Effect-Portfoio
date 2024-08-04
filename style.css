@@ -68,8 +68,8 @@
 .black-theme .card .card__top .profile__photo img {
   width: 100%;
   border-radius: 50%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%; 
+  object-fit: calc();
   border: 7px solid rgba(0, 0, 0, 0.35);
 }
 
