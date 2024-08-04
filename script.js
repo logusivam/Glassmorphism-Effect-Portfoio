@@ -17,6 +17,6 @@ function changeTheme()
     {
         document.body.classList.remove("white-theme");
         document.body.classList.add("black-theme");
-        change.innerHTML = '<i class="fas fa-sun"'
+        change.innerHTML = '<i class="fas fa-sun"></i>';
     }
 }
