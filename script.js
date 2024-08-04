@@ -15,6 +15,7 @@ function changeTheme()
 
     else
     {
-        
+        document.body.classList.remove("white-theme");
+        document.body.classList.add()
     }
 }
