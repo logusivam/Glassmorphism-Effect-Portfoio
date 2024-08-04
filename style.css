@@ -293,27 +293,27 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
-  &:hover i
-  {
-    animation: rotation 1.5s linear forwards infinite;
-  }
-
-  i
-  {
-    font-size: 1.5rem;
-  }
-
-  @keyframes rotation
-  {
-    0%
-    {
-      transform: rotate(0deg);
-    }
-
-    100%
-    {
-      transform: rotate(360deg);
-    }
-  }
 }
+
+#switch:hover i
+{
+  animation: rotation 1.5s linear forwards infinite;
+}
+
+#switch i
+{
+  font-size: 1.5rem;
+}
+
+@keyframes rotation
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+  }
+ }
