@@ -16,6 +16,7 @@ function changeTheme()
     else
     {
         document.body.classList.remove("white-theme");
-        document.body.classList.add()
+        document.body.classList.add("black-theme");
+        change.innerHTML = '<i class="fas fa-sun"'
     }
 }
